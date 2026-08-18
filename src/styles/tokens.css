@@ -1,0 +1,19 @@
+:root {
+  /* Poster / travel-document palette */
+  --plum: #4b3358;
+  --rust: #c6572e;
+  --gold: #e8a33d;
+  --midnight: #211935;
+  --midnight-2: #170f26;
+  --cream: #f6efdc;
+  --cream-2: #eee3c4;
+  --sage: #6f9260;
+  --sage-deep: #48613d;
+  --sage-deepest: #2b3d25;
+  --ink: #241c1c;
+  --line: rgba(36, 28, 28, 0.16);
+
+  --font-poster: "Big Shoulders Display", sans-serif;
+  --font-body: "Libre Franklin", sans-serif;
+  --font-stamp: "Special Elite", cursive;
+}

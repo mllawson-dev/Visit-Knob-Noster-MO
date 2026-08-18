@@ -1,0 +1,167 @@
+.weather-wrap {
+  max-width: 520px;
+}
+
+.route .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  .route .wrap {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}
+.route-map {
+  background: var(--cream-2);
+  border: 1px solid var(--line);
+  padding: 28px;
+}
+.route-list {
+  border-top: 1px solid var(--line);
+}
+.route-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
+}
+.route-row .rn {
+  font-weight: 700;
+  font-size: 15px;
+}
+.route-row .rd {
+  font-family: var(--font-poster);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--rust);
+  white-space: nowrap;
+}
+.route-row .rt {
+  font-size: 12px;
+  color: #6b6156;
+  display: block;
+  margin-top: 2px;
+}
+
+/* ---------- stay grid ---------- */
+.stay-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+  background: var(--ink);
+}
+@media (max-width: 820px) {
+  .stay-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.stay-card {
+  background: var(--cream);
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.stay-card .tag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+.stay-card h3 {
+  font-family: var(--font-poster);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 23px;
+  margin: 0;
+  line-height: 1.02;
+}
+.stay-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4c4038;
+  margin: 0;
+}
+
+/* ---------- know before you go ---------- */
+.know {
+  background: var(--midnight);
+  color: var(--cream);
+}
+.know-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 44px;
+}
+@media (max-width: 820px) {
+  .know-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+.know-item {
+  display: flex;
+  gap: 18px;
+}
+.know-item .kn {
+  font-family: var(--font-poster);
+  font-weight: 900;
+  font-size: 32px;
+  color: var(--gold);
+  line-height: 1;
+  flex: 0 0 auto;
+}
+.know-item h4 {
+  font-family: var(--font-poster);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+.know-item p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: rgba(246, 239, 220, 0.78);
+  margin: 0;
+}
+
+/* ---------- FAQ ---------- */
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: var(--ink);
+}
+@media (max-width: 820px) {
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.faq-card {
+  background: var(--cream);
+  padding: 30px 32px;
+}
+.faq-card .q {
+  font-family: var(--font-stamp);
+  font-size: 11.5px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 8px;
+}
+.faq-card h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 10px;
+}
+.faq-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #4c4038;
+  margin: 0;
+}

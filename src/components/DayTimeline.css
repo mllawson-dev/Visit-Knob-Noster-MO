@@ -1,0 +1,46 @@
+.day-strip {
+  border-top: 2px solid var(--ink);
+  margin-top: 24px;
+}
+.day-block {
+  padding: 20px 0 4px;
+}
+.day-block .day-label {
+  font-family: var(--font-stamp);
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 4px;
+}
+.day-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 28px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+@media (max-width: 640px) {
+  .day-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+}
+.day-row .time {
+  font-family: var(--font-poster);
+  font-weight: 800;
+  font-size: 19px;
+  text-transform: uppercase;
+  color: var(--rust);
+}
+.day-row h5 {
+  margin: 0 0 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.day-row p {
+  margin: 0;
+  font-size: 14.5px;
+  color: #4c4038;
+  line-height: 1.55;
+}
