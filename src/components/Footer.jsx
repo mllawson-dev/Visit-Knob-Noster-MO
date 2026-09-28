@@ -10,15 +10,15 @@ export default function Footer() {
             <span className="sub">Visit</span>
             <span className="name">Knob Noster</span>
             <address>
-              Visitor Information
+              Knob Noster Chamber of Commerce
               <br />
-              100 E. Washington St.
+              PO Box 31
               <br />
               Knob Noster, MO 65336
             </address>
           </div>
           <div className="footer-col">
-            <h5>Explore</h5>
+            <div className="footer-heading">Explore</div>
             <ul>
               <li>
                 <Link to="/things-to-do">Things to Do</Link>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <Link to="/state-park">Knob Noster State Park</Link>
               </li>
               <li>
-                <Link to="/things-to-do">Plane Spotting Guide</Link>
+                <a href="https://www.whiteman.af.mil/Community/Base-Tours/Base-Tours/" target="_blank" rel="noreferrer">Official Base Tours</a>
               </li>
               <li>
                 <Link to="/downtown">Downtown Shops</Link>
@@ -35,7 +35,7 @@ export default function Footer() {
             </ul>
           </div>
           <div className="footer-col">
-            <h5>Plan</h5>
+            <div className="footer-heading">Plan</div>
             <ul>
               <li>
                 <Link to="/plan-your-visit#route">Getting Here</Link>
@@ -47,30 +47,30 @@ export default function Footer() {
                 <Link to="/itinerary">Suggested Itineraries</Link>
               </li>
               <li>
-                <a href="#">Visitor Guide</a>
+                <Link to="/visitor-guide">Printable Visitor Guide</Link>
               </li>
             </ul>
           </div>
           <div className="footer-col">
-            <h5>Follow Along</h5>
+            <div className="footer-heading">Official Resources</div>
             <ul>
               <li>
-                <a href="#">Instagram</a>
+                <a href="https://www.knchamber.org/member-directory" target="_blank" rel="noreferrer">Chamber Directory</a>
               </li>
               <li>
-                <a href="#">Facebook</a>
+                <a href="https://mostateparks.com/park/knob-noster-state-park" target="_blank" rel="noreferrer">Missouri State Parks</a>
               </li>
               <li>
-                <a href="#">Newsletter</a>
+                <a href="https://www.whiteman.af.mil/News/" target="_blank" rel="noreferrer">Whiteman News</a>
               </li>
             </ul>
           </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; 2026 Visit Knob Noster, Missouri</span>
+          <span>&copy; 2026 Visit Knob Noster &middot; Independent portfolio concept; verify plans with linked official sources.</span>
           <div style={{ display: "flex", gap: "18px" }}>
-            <a href="#">Accessibility</a>
-            <a href="#">Contact</a>
+            <Link to="/accessibility">Accessibility</Link>
+            <Link to="/contact">Contact & Sources</Link>
           </div>
         </div>
       </div>

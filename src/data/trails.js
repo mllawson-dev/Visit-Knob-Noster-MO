@@ -1,31 +1,31 @@
 export const TRAILS = [
   {
     blaze: "yellow",
-    name: "McAdoo Trail",
+    name: "McAdoo Trail System",
     description:
-      "The park's longest and only trail open to horses and mountain bikes. It winds through Christopher Woods — the oldest stand of continuous timber in the park — with creek crossings and a few steep grades.",
-    meta: ["7.1 mi", "Yellow blazes", "Hike · Bike · Horse"],
+      "The park's longest route crosses rugged woodland and is shared by hikers and equestrians. Check trail conditions before setting out.",
+    meta: ["5 mi", "Rugged", "Hike · Horse"],
   },
   {
     blaze: "green",
     name: "Discovery Trail",
     description:
-      "A short loop from the campground past the visitor center and along No Name Creek — thick with spring and summer wildflowers, deer, frogs, and turtles.",
-    meta: ["0.75 mi", "Green blazes", "Hike · Easy"],
+      "A compact woodland loop suited to visitors who want a shorter walk close to the park's developed area.",
+    meta: ["0.9 mi", "Moderate", "Hike"],
   },
   {
     blaze: "yellow",
     name: "North Loop Trail",
     description:
-      "A mid-length loop through open woodland and savanna restoration areas — a good pick for birding, with plenty of species drawn to the mixed habitat.",
-    meta: ["Moderate", "Yellow blazes", "Hike"],
+      "A mid-length loop through the park's mixed woodland habitat, well suited to a steady morning hike.",
+    meta: ["1.8 mi", "Moderate", "Hike"],
   },
   {
-    blaze: "white",
-    name: "Pin Oak Slough Natural Area",
+    blaze: "blue",
+    name: "Clearfork Woodland Trail",
     description:
-      "An oxbow slough along the Clearfork, officially designated a natural area — home to the rare pale green orchid and some of the park's quietest corners.",
-    meta: ["Natural area", "Along Clearfork Creek", "Birding · Photography"],
+      "A short trail through the Clearfork Woodland Natural Area, one of the park's quieter options.",
+    meta: ["0.7 mi", "Moderate", "Hike"],
   },
 ];
 
@@ -48,6 +48,6 @@ export const SEASONS = [
   {
     name: "Winter",
     title: "Quiet Trails",
-    description: "The campground closes, but the trails stay open — a still, uncrowded way to see the park's bones.",
+    description: "Trails remain a quiet draw, while a limited group of campsites stays reservable year-round.",
   },
 ];

@@ -1,16 +1,3 @@
-.park-scene {
-  position: relative;
-  z-index: 3;
-  height: 180px;
-  margin-top: 20px;
-}
-.park-scene svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* ---------- trails ---------- */
 .trail-grid {
   display: grid;
@@ -46,6 +33,9 @@
 }
 .blaze-green {
   background: var(--sage);
+}
+.blaze-blue {
+  background: #3d6f91;
 }
 .blaze-white {
   background: #d9cda9;
@@ -161,7 +151,7 @@
   color: var(--gold);
   margin-bottom: 10px;
 }
-.season-card h4 {
+.season-card h3 {
   font-family: var(--font-poster);
   font-weight: 700;
   text-transform: uppercase;

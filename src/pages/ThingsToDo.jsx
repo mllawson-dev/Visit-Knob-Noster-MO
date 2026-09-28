@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PageHero from "../components/PageHero";
+import SectionHead from "../components/SectionHead";
 import { CATEGORIES, THINGS_TO_DO } from "../data/thingsToDo";
 import "./ThingsToDo.css";
 
@@ -38,7 +39,10 @@ export default function ThingsToDo() {
       </nav>
 
       <section className="listing">
-        <div className="wrap" style={{ padding: 0 }}>
+        <div className="wrap">
+          <SectionHead kicker="Build your day" title="Choose your kind of visit">
+            Every listing is anchored to a verified destination or official planning source. Confirm hours and conditions before you go.
+          </SectionHead>
           <div className="listing-grid">
             {items.map((item) => (
               <article className="item-card" key={item.num}>
@@ -67,13 +71,10 @@ export default function ThingsToDo() {
         <div className="wrap">
           <h2>Ready to Plan Your Visit?</h2>
           <p>
-            Grab the visitor guide for maps, flyover timing, and a full events calendar — then come see Knob Noster
-            for yourself.
+            Use the guide for official maps, current source links, and a practical route through town and park.
           </p>
           <div className="cta-actions">
-            <a href="#" className="btn btn-cta-solid">
-              Download Visitor Guide
-            </a>
+            <Link to="/visitor-guide" className="btn btn-cta-solid">Open Visitor Guide</Link>
             <Link to="/plan-your-visit" className="btn btn-cta-line">
               Plan Your Trip
             </Link>

@@ -6,6 +6,10 @@ import StatePark from "./pages/StatePark";
 import Downtown from "./pages/Downtown";
 import PlanYourVisit from "./pages/PlanYourVisit";
 import Itinerary from "./pages/Itinerary";
+import VisitorGuide from "./pages/VisitorGuide";
+import Accessibility from "./pages/Accessibility";
+import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 export default function App() {
   return (
@@ -18,6 +22,10 @@ export default function App() {
           <Route path="/downtown" element={<Downtown />} />
           <Route path="/plan-your-visit" element={<PlanYourVisit />} />
           <Route path="/itinerary" element={<Itinerary />} />
+          <Route path="/visitor-guide" element={<VisitorGuide />} />
+          <Route path="/accessibility" element={<Accessibility />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>

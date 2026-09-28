@@ -1,4 +1,5 @@
-import { NavLink, Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 const NAV_LINKS = [
@@ -10,6 +11,11 @@ const NAV_LINKS = [
 ];
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => setOpen(false), [location.pathname, location.hash]);
+
   return (
     <header className="site-header">
       <div className="wrap">
@@ -24,7 +30,17 @@ export default function Header() {
             <span className="name">Knob Noster</span>
           </span>
         </Link>
-        <nav className="primary-nav" aria-label="Primary">
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-expanded={open}
+          aria-controls="primary-navigation"
+          onClick={() => setOpen((value) => !value)}
+        >
+          <span aria-hidden="true">{open ? "×" : "☰"}</span>
+          <span>{open ? "Close" : "Menu"}</span>
+        </button>
+        <nav id="primary-navigation" className={`primary-nav${open ? " is-open" : ""}`} aria-label="Primary">
           {NAV_LINKS.map((link) => (
             <NavLink
               key={link.to}
@@ -35,7 +51,7 @@ export default function Header() {
             </NavLink>
           ))}
         </nav>
-        <Link to="/plan-your-visit" className="btn btn-solid">
+        <Link to="/plan-your-visit" className="btn btn-solid header-cta">
           Plan Your Visit
         </Link>
       </div>

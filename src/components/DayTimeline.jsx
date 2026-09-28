@@ -14,7 +14,7 @@ export default function DayTimeline({ days }) {
             <div className="day-row" key={row.time + row.title}>
               <div className="time">{row.time}</div>
               <div>
-                <h5>{row.title}</h5>
+                <h3>{row.title}</h3>
                 <p>{row.description}</p>
               </div>
             </div>

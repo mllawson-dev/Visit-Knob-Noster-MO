@@ -116,7 +116,7 @@
   line-height: 1;
   flex: 0 0 auto;
 }
-.know-item h4 {
+.know-item h3 {
   font-family: var(--font-poster);
   font-weight: 700;
   text-transform: uppercase;
@@ -154,7 +154,7 @@
   color: var(--rust);
   margin-bottom: 8px;
 }
-.faq-card h4 {
+.faq-card h3 {
   font-weight: 700;
   font-size: 16px;
   margin: 0 0 10px;

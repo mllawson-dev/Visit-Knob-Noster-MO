@@ -61,6 +61,9 @@
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 920px) {
+  .filters { top: 72px; }
+}
 .item-card {
   background: var(--cream);
   padding: 38px;
