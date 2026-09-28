@@ -3,16 +3,17 @@ import TicketStrip from "../components/TicketStrip";
 import SectionHead from "../components/SectionHead";
 import { TRAILS, SEASONS } from "../data/trails";
 import { PHOTOS } from "../data/photos";
+import { SOURCES } from "../data/sources";
 import "./StatePark.css";
 
 const STATS = [
-  { label: "Acreage", value: "3,600+ Acres" },
-  { label: "Trails", value: "7 Trails, 18 Mi" },
+  { label: "Acreage", value: "3,934.38 Acres" },
+  { label: "Trails", value: "8 Official Trails" },
   { label: "Lakes", value: "Buteo & Clearfork" },
-  { label: "Opened", value: "1933" },
+  { label: "State Park Since", value: "1946" },
 ];
 
-const BLAZE_CLASS = { yellow: "blaze-yellow", green: "blaze-green", white: "blaze-white" };
+const BLAZE_CLASS = { yellow: "blaze-yellow", green: "blaze-green", blue: "blaze-blue", white: "blaze-white" };
 
 export default function StatePark() {
   return (
@@ -23,21 +24,10 @@ export default function StatePark() {
         title={<>Knob Noster<br />State Park</>}
         photo={PHOTOS.forestTrail.url}
         photoAlt={PHOTOS.forestTrail.alt}
-        scene={
-          <div className="park-scene" aria-hidden="true">
-            <svg viewBox="0 0 1200 180" preserveAspectRatio="none">
-              <path d="M0 160 Q200 60 420 150 T900 120 T1200 140 L1200 180 L0 180 Z" fill="#2B3D25" />
-              <g fill="#233019">
-                <path d="M60 160 L60 100 L52 108 M60 100 L68 108" stroke="#233019" strokeWidth="4" fill="none" />
-                <path d="M140 160 L140 90 L130 100 M140 90 L150 100" stroke="#233019" strokeWidth="4" fill="none" />
-                <path d="M980 155 L980 95 L970 105 M980 95 L990 105" stroke="#233019" strokeWidth="4" fill="none" />
-                <path d="M1060 158 L1060 105 L1052 113 M1060 105 L1068 113" stroke="#233019" strokeWidth="4" fill="none" />
-              </g>
-            </svg>
-          </div>
-        }
+        photoCredit={PHOTOS.forestTrail.credit}
+        photoCreditUrl={PHOTOS.forestTrail.creditUrl}
       >
-        3,600 acres of oak-hickory woods, restored savanna, and prairie folded around the meandering Clearfork Creek
+        3,934.38 acres of oak-hickory woods, savanna, and prairie folded around the meandering Clearfork Creek
         — a quiet green half to a town best known for the sky above it.
       </PageHero>
 
@@ -45,11 +35,12 @@ export default function StatePark() {
 
       <section className="trails">
         <div className="wrap">
-          <SectionHead kicker="On the trail" kickerModifier="kicker--sage" title="Seven trails, one creek running through them all">
-            From a half-mile wildflower loop to a 7-mile ride through old-growth timber, the park's trail system is
-            built for every kind of visit.
+          <SectionHead kicker="On the trail" kickerModifier="kicker--sage" title="Eight official trails, four good starting points">
+            This shortlist helps you compare a few routes. Use Missouri State Parks' current map and trail pages for
+            the full set, conditions, rules, and closures.
           </SectionHead>
         </div>
+        <div className="wrap" style={{ marginTop: "30px" }}><a className="btn btn-outline-ink" href={SOURCES.stateParkTrails} target="_blank" rel="noreferrer">View all official trails &rarr;</a></div>
         <div className="trail-grid">
           {TRAILS.map((trail) => (
             <div className="trail-card" key={trail.name}>
@@ -79,26 +70,26 @@ export default function StatePark() {
             <span className="tag">Fishing</span>
             <h3>Lake Buteo & Clearfork Lake</h3>
             <p>
-              Two small lakes plus the Clearfork itself give anglers plenty of bank access — no boat launch, but
-              canoes and kayaks can be hand-carried in, and electric trolling motors are welcome.
+              Two small lakes plus Clearfork Creek make fishing part of the park experience. Check current Missouri
+              State Parks and Department of Conservation rules before putting a line in the water.
             </p>
             <ul>
               <li>Bass, bluegill, crappie &amp; channel catfish</li>
               <li>Valid Missouri fishing license required</li>
-              <li>Sunrise to sunset daily</li>
+              <li>Check current park hours and water conditions</li>
             </ul>
           </div>
           <div className="split-card">
             <span className="tag">Camping</span>
             <h3>Wooded, level & well-shaded sites</h3>
             <p>
-              The campground offers basic and electric sites with a recently renovated bathhouse, plus backpack
-              camps along the McAdoo Trail for a deeper-in-the-woods night.
+              The campground offers basic, electric, sewer/electric/water, and backpack options. Availability and
+              amenities vary by site and season.
             </p>
             <ul>
-              <li>Basic &amp; electric sites, ADA accessible</li>
-              <li>Seasonal — closed in winter</li>
-              <li>Reserve ahead for fall weekends</li>
+              <li>Sites 1–25 reservable year-round</li>
+              <li>Sites 26–60 generally open April 15–October 31</li>
+              <li>Showers and some water services are seasonal</li>
             </ul>
           </div>
         </div>
@@ -115,7 +106,7 @@ export default function StatePark() {
             {SEASONS.map((s) => (
               <div className="season-card" key={s.name}>
                 <div className="sn">{s.name}</div>
-                <h4>{s.title}</h4>
+                <h3>{s.title}</h3>
                 <p>{s.description}</p>
               </div>
             ))}
@@ -131,10 +122,9 @@ export default function StatePark() {
               Built by the CCC & WPA
             </h2>
             <p>
-              Knob Noster State Park opened in 1933, built through the combined work of the Civilian Conservation
-              Corps and the Works Progress Administration to reclaim land that had once been farmed and mined.
-              Several structures from that era are now listed on the National Register of Historic Places — a quiet
-              layer of history under the tree cover.
+              The land was developed as a federal recreation demonstration project in the late 1930s. Missouri took
+              ownership in 1946 and renamed it Knob Noster State Park. Historic structures from that period remain
+              part of the landscape.
             </p>
           </div>
           <div>
@@ -159,12 +149,8 @@ export default function StatePark() {
             year-round.
           </p>
           <div className="cta-actions">
-            <a href="#" className="btn btn-cta-solid">
-              Download Trail Map
-            </a>
-            <a href="#" className="btn btn-cta-line">
-              Reserve a Campsite
-            </a>
+            <a href={SOURCES.stateParkTrailMap} target="_blank" rel="noreferrer" className="btn btn-cta-solid">Official Park Map</a>
+            <a href={SOURCES.stateParkCamping} target="_blank" rel="noreferrer" className="btn btn-cta-line">Camping & Reservations</a>
           </div>
         </div>
       </section>

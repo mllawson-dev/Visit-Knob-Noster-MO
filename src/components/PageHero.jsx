@@ -10,6 +10,8 @@ export default function PageHero({
   scene,
   photo,
   photoAlt = "",
+  photoCredit,
+  photoCreditUrl,
 }) {
   return (
     <section className={`page-hero page-hero--${variant}`}>
@@ -24,9 +26,14 @@ export default function PageHero({
         <p className="crumb">
           <Link to="/">Visit Knob Noster</Link> &middot; {crumb}
         </p>
-        <h1>{title}</h1>
+        <h1 tabIndex="-1">{title}</h1>
         <p className="lede">{children}</p>
       </div>
+      {photoCredit && (
+        <a className="photo-credit" href={photoCreditUrl} target="_blank" rel="noreferrer">
+          Photo: {photoCredit}
+        </a>
+      )}
       {stampLines && <Stamp lines={stampLines} className="badge-stamp" />}
       {scene}
     </section>

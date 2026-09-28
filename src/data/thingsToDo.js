@@ -10,26 +10,26 @@ export const THINGS_TO_DO = [
   {
     num: "01",
     category: "outdoors",
-    title: "Hike the Papoose & Bluebird Trails",
+    title: "Choose a State Park Trail",
     description:
-      "Two of the park's best loops, winding through oak-hickory forest along the Clearfork — easy enough for a first-timer, pretty enough for a regular.",
-    meta: ["2–4 mi loop", "Easy–Moderate", "Knob Noster State Park"],
+      "Eight official trails range from short woodland walks to the rugged five-mile McAdoo system. Use the current park map to match the route to your time and ability.",
+    meta: ["8 official trails", "Easy–Rugged", "Knob Noster State Park"],
   },
   {
     num: "02",
     category: "only-here",
-    title: "Watch a B-2 on Final Approach",
+    title: "Experience Whiteman's Aviation Community",
     description:
-      "Head to the cemetery bluff or the Route 50 pull-off during flight ops — locals will tell you exactly when to show up.",
-    meta: ["Free", "Weekday flight ops", "Near Whiteman AFB"],
+      "Aircraft may be visible from public areas around town, but operations are never guaranteed. Stay on public property, never stop on road shoulders, and respect all posted restrictions.",
+    meta: ["No published flight schedule", "Public areas only", "Near Whiteman AFB"],
   },
   {
     num: "03",
     category: "downtown",
     title: "Pull a Pint at Lost Art Taproom",
     description:
-      "Housed in a former bank and post office building, this husband-and-wife-run taproom has been pouring house-brewed beer since 2021. A local favorite, and a good place to plan the rest of your day.",
-    meta: ["$$", "101 N State St", "Downtown Knob Noster"],
+      "A house-brewed beer stop in the downtown State Street cluster. Check current hours before planning your route.",
+    meta: ["101 N State St", "Downtown Knob Noster"],
   },
   {
     num: "04",
@@ -42,10 +42,10 @@ export const THINGS_TO_DO = [
   {
     num: "05",
     category: "seasonal",
-    title: "Fall Festival & Farmers Market",
+    title: "Check the Community Calendar",
     description:
-      "The town park fills up every September, and the farmers market runs weekly through the growing season — good reasons to time a visit.",
-    meta: ["Free", "September", "City Park"],
+      "The Chamber publishes current festivals, strolls, and community gatherings. Check its calendar before you choose a weekend.",
+    meta: ["Dates vary", "Chamber calendar", "Around Knob Noster"],
   },
   {
     num: "06",
@@ -53,7 +53,7 @@ export const THINGS_TO_DO = [
     title: "Camp Under a Big Missouri Sky",
     description:
       "Basic and electric campsites inside the state park, with easy lake access — book ahead for fall weekends.",
-    meta: ["$15–30/night", "Reservations recommended", "Knob Noster State Park"],
+    meta: ["Basic, electric & full-service", "Reservations recommended", "Knob Noster State Park"],
   },
   {
     num: "07",
@@ -66,25 +66,25 @@ export const THINGS_TO_DO = [
   {
     num: "08",
     category: "only-here",
-    title: "Community Flyover Days",
+    title: "Request an Official Base Tour",
     description:
-      "A few times a year, the base opens events to the public — the closest most visitors will ever get to a B-2 Spirit on the ground.",
-    meta: ["Free", "Select dates", "Whiteman AFB"],
+      "Whiteman accepts organized group-tour requests from March through October. Tours require advance paperwork, have group-size rules, and can be cancelled for mission needs.",
+    meta: ["Organized groups", "Advance request required", "Whiteman AFB"],
   },
   {
     num: "09",
     category: "downtown",
-    title: "Breakfast at Meyer's Market",
+    title: "Browse Meyer's Market",
     description:
-      "A downtown market and gathering spot with a book section and a first-Tuesday book club — grab a coffee and talk to a local.",
-    meta: ["$", "Mornings", "Downtown Knob Noster"],
+      "This locally owned general store sits in the heart of the State Street business cluster and carries an ever-changing mix of goods.",
+    meta: ["108 N State St", "Downtown Knob Noster"],
   },
   {
     num: "10",
     category: "seasonal",
-    title: "Veterans Appreciation Breakfast",
+    title: "Pair the Park With a Downtown Stop",
     description:
-      "A community tradition honoring the base's long partnership with the town — open to visitors as well as residents.",
-    meta: ["Free", "November", "Community Center"],
+      "Build a low-key day around one trail, one meal, and one local shop instead of trying to rush through every stop.",
+    meta: ["Year-round", "Flexible", "Town + park"],
   },
 ];

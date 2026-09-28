@@ -5,6 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 96px;
 }
 body {
   margin: 0;
@@ -16,6 +17,11 @@ body {
 a {
   color: inherit;
 }
+button,
+a {
+  -webkit-tap-highlight-color: rgba(198, 87, 46, 0.2);
+}
+button { font: inherit; }
 img,
 svg {
   display: block;
@@ -50,6 +56,7 @@ button:focus-visible {
   outline-offset: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
   * {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
@@ -95,6 +102,7 @@ button:focus-visible {
   cursor: pointer;
   border: 2px solid transparent;
   background: none;
+  min-height: 48px;
 }
 .btn-solid {
   background: var(--rust);
@@ -230,6 +238,10 @@ h2.section-title {
   font-size: 27px;
   text-transform: uppercase;
 }
+@media (max-width: 560px) {
+  .ticket-cell { padding: 18px; }
+  .ticket-cell .tv { font-size: 22px; }
+}
 
 /* ---------- duotone photo overlay system ---------- */
 .hero-photo {
@@ -267,6 +279,19 @@ h2.section-title {
   z-index: 2;
   background: linear-gradient(180deg, rgba(23, 15, 38, 0.32) 0%, rgba(23, 15, 38, 0.74) 100%);
 }
+.photo-credit {
+  position: absolute;
+  z-index: 6;
+  right: 0;
+  bottom: 0;
+  color: rgba(255, 255, 255, 0.88);
+  background: rgba(23, 15, 38, 0.72);
+  padding: 5px 8px;
+  font-size: 10px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.photo-credit:hover { color: #fff; text-decoration: underline; }
 
 /* ---------- page hero (shared shape, color set per page) ---------- */
 .page-hero {
@@ -284,7 +309,7 @@ h2.section-title {
 }
 .page-hero--forest {
   background: linear-gradient(150deg, var(--sage-deepest) 0%, var(--sage-deep) 55%, var(--sage) 100%);
-  padding-bottom: 0;
+  padding-bottom: 56px;
 }
 .page-hero--brick {
   background: linear-gradient(135deg, var(--rust) 0%, var(--plum) 100%);

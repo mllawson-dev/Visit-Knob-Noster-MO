@@ -10,15 +10,15 @@ export const ITINERARIES = [
         rows: [
           {
             time: "Morning",
-            title: "Coffee downtown, then hit the trailhead",
+            title: "Start downtown, then hit the trailhead",
             description:
-              "Start at a downtown storefront café, then head southwest to Knob Noster State Park for a morning hike along the Clearfork on the Discovery or North Loop Trail.",
+              "Check the Chamber directory for a current coffee or breakfast stop, then head southwest to Knob Noster State Park for the Discovery or North Loop Trail.",
           },
           {
             time: "Midday",
-            title: "Lunch and a flyover",
+            title: "Lunch and local aviation context",
             description:
-              "Grab lunch downtown, then check local flight-ops timing and post up at a viewing spot for a chance at a B-2 on approach.",
+              "Grab lunch downtown, then look for aircraft only from lawful public areas. Flight operations are not published or guaranteed; never stop on shoulders or approach the base perimeter.",
           },
           {
             time: "Afternoon",
@@ -52,8 +52,8 @@ export const ITINERARIES = [
           },
           {
             time: "Late PM",
-            title: "Hike the McAdoo Trail",
-            description: "Take on the park's longest loop through Christopher Woods while the light is good — save the shorter trails for tomorrow.",
+            title: "Hike the McAdoo Trail System",
+            description: "Take on the park's rugged five-mile hiking and equestrian route while the light is good—then save a shorter trail for tomorrow.",
           },
           {
             time: "Evening",
@@ -77,8 +77,8 @@ export const ITINERARIES = [
           },
           {
             time: "Afternoon",
-            title: "One last shot at a flyover",
-            description: "Swing by a viewing spot on your way out of town for a final chance to catch a B-2 before heading home.",
+            title: "Check Whiteman's official news",
+            description: "Before heading home, read the base's official news or tour guidance and enjoy any aircraft activity only from safe, lawful public areas.",
           },
         ],
       },
@@ -87,26 +87,26 @@ export const ITINERARIES = [
   {
     id: "panel-spotter",
     duration: "Half Day",
-    name: "Plane Spotter's Route",
-    tabSub: "Built around flight ops timing, for aviation-first visitors.",
+    name: "Aviation & Town Route",
+    tabSub: "A respectful, public-access route for aviation-curious visitors.",
     tags: ["Half Day", "Aviation", "Weekday Best"],
     days: [
       {
         rows: [
           {
             time: "Before",
-            title: "Check flight-ops timing",
-            description: "Whiteman doesn't publish a public schedule, so ask locally or check spotting groups the morning of your visit for the best window.",
+            title: "Start with official guidance",
+            description: "Read Whiteman's current base-access and tour information. There is no published visitor flight schedule, and routine operations can change without notice.",
           },
           {
             time: "Midday",
-            title: "Fuel up downtown",
-            description: "Grab coffee and an early lunch in Knob Noster before heading to a viewing spot — flight ops can run long.",
+            title: "Spend time downtown",
+            description: "Choose an open coffee or lunch stop from the current Chamber directory, then browse one or two State Street shops.",
           },
           {
             time: "Afternoon",
-            title: "Post up at the cemetery bluff or Route 50 pull-off",
-            description: "Both are known local spots for watching approaches and departures — bring a camera with some reach if you've got one.",
+            title: "Enjoy the aviation landscape safely",
+            description: "Aircraft may be visible from public areas around the community. Stay off road shoulders and private property, obey signs, and never photograph or approach restricted areas.",
           },
           {
             time: "Late PM",

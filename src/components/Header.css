@@ -60,8 +60,46 @@
   border-color: var(--rust);
   color: var(--rust);
 }
+.menu-toggle {
+  display: none;
+  min-width: 48px;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 2px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font: 700 12px/1 var(--font-body);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.menu-toggle span:first-child {
+  font-size: 20px;
+  line-height: 1;
+}
 @media (max-width: 920px) {
+  .site-header .wrap { height: 72px; }
+  .menu-toggle { display: inline-flex; }
   .primary-nav {
     display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 72px;
+    padding: 18px 20px 24px;
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    box-shadow: 0 12px 24px rgba(23, 15, 38, 0.14);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
   }
+  .primary-nav.is-open { display: flex; }
+  .primary-nav a { min-height: 48px; display: flex; align-items: center; border-bottom: 1px solid rgba(36,28,28,.18); }
+  .header-cta { display: none; }
+}
+@media (max-width: 520px) {
+  .brand span.name { font-size: 20px; }
+  .brand-badge { width: 40px; height: 40px; }
 }

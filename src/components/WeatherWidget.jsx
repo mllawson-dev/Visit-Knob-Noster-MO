@@ -28,6 +28,9 @@ export default function WeatherWidget() {
         return res.json();
       })
       .then((data) => {
+        if (data?.error || typeof data?.current?.weather_code !== "number" || !Array.isArray(data?.daily?.time)) {
+          throw new Error("Unexpected weather payload");
+        }
         if (!cancelled) setState({ status: "ready", data });
       })
       .catch(() => {
@@ -46,10 +49,10 @@ export default function WeatherWidget() {
         <span className="weather-updated">Knob Noster, MO</span>
       </div>
 
-      {state.status === "loading" && <p className="weather-state">Loading current conditions…</p>}
+      {state.status === "loading" && <p className="weather-state" role="status" aria-live="polite">Loading current conditions…</p>}
 
       {state.status === "error" && (
-        <p className="weather-state">Couldn't load live weather right now — check a forecast site before you head out.</p>
+        <p className="weather-state" role="status">Couldn't load live weather right now — check a forecast site before you head out.</p>
       )}
 
       {state.status === "ready" && state.data && (

@@ -1,17 +1,25 @@
-# React + Vite
+# Visit Knob Noster
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## How to see the site
 
-Currently, two official plugins are available:
+1. Run `npm install`.
+2. Run `npm run dev`.
+3. Open the local address shown in the terminal.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+For a production check, run `npm run lint` and `npm run build`.
 
-## React Compiler
+## Content and source policy
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This is an independent portfolio concept, not an official tourism authority website. Visitor facts and destinations were checked against the Knob Noster Chamber of Commerce, Missouri State Parks, the U.S. Air Force, the Missouri Department of Conservation, and the U.S. Census. Hours, access rules, events, weather, and conditions can change; the interface sends visitors to the responsible official source for final confirmation.
 
-## Expanding the Oxlint configuration
+Local photography:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
-# Visit-Knob-Noster-MO
+- Knob Noster State Park images: Missouri State Parks, public domain, archived through Wikimedia Commons.
+- B-2 Spirit image: U.S. Air Force photo by Airman 1st Class Hailey Farrell, public domain, via DVIDS.
+
+## Before a public launch
+
+- Confirm the final production domain, then add canonical URLs, an XML sitemap, `llms.txt`, and absolute social-sharing image URLs.
+- Confirm brand ownership and authorization to present the concept as an official visitor site.
+- Recheck all business listings, park rules, tour requirements, and seasonal details immediately before launch.
+- Add a 1200×630 social-sharing image after the domain and approved brand identity are final.

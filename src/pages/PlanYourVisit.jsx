@@ -4,10 +4,11 @@ import TicketStrip from "../components/TicketStrip";
 import SectionHead from "../components/SectionHead";
 import WeatherWidget from "../components/WeatherWidget";
 import { DRIVE_TIMES, STAY_OPTIONS, KNOW_BEFORE_YOU_GO, FAQS } from "../data/routes";
+import { SOURCES } from "../data/sources";
 import "./PlanYourVisit.css";
 
 const STATS = [
-  { label: "From Kansas City", value: "68 mi · 1h 9m" },
+  { label: "From Kansas City", value: "About 68 mi" },
   { label: "Nearest Highway", value: "U.S. Route 50" },
   { label: "Time Zone", value: "Central" },
   { label: "Best Season", value: "Fall & Spring" },
@@ -55,9 +56,9 @@ export default function PlanYourVisit() {
               ))}
             </div>
             <p style={{ fontSize: "13.5px", color: "#6B6156", marginTop: "16px" }}>
-              Closest commercial airports are Kansas City International (MCI) and Columbia Regional (COU), each
-              roughly 90 minutes away by car.
+              Drive times vary with your exact starting point, traffic, and weather. Open live directions before leaving.
             </p>
+            <a className="btn btn-outline-ink" href={SOURCES.directions} target="_blank" rel="noreferrer">Open live directions &rarr;</a>
           </div>
           <div className="route-map" aria-hidden="true">
             <svg viewBox="0 0 460 380" width="100%">
@@ -108,8 +109,8 @@ export default function PlanYourVisit() {
       <section className="stay">
         <div className="wrap">
           <SectionHead kicker="Where to stay" title="Camp, or bunk nearby">
-            Knob Noster itself is short on lodging, so most visitors either camp in the state park or base out of
-            Warrensburg or Sedalia, both under 15 minutes away.
+            Camp inside the state park or compare lodging in nearby Warrensburg and Sedalia. Travel times and room
+            availability vary, so check a live map and booking source before you commit.
           </SectionHead>
         </div>
         <div className="stay-grid">
@@ -131,7 +132,7 @@ export default function PlanYourVisit() {
               <div className="know-item" key={k.num}>
                 <div className="kn">{k.num}</div>
                 <div>
-                  <h4>{k.title}</h4>
+                  <h3>{k.title}</h3>
                   <p>{k.description}</p>
                 </div>
               </div>
@@ -148,7 +149,7 @@ export default function PlanYourVisit() {
           {FAQS.map((f) => (
             <div className="faq-card" key={f.q}>
               <div className="q">{f.q}</div>
-              <h4>{f.title}</h4>
+              <h3>{f.title}</h3>
               <p>{f.description}</p>
             </div>
           ))}
@@ -158,11 +159,9 @@ export default function PlanYourVisit() {
       <section className="cta cta--rust">
         <div className="wrap">
           <h2>Time to Hit the Road</h2>
-          <p>Grab the visitor guide for a printable map, then set your GPS for Knob Noster, Missouri.</p>
+          <p>Open the printable guide for official maps and current links, then set your route for Knob Noster.</p>
           <div className="cta-actions">
-            <a href="#" className="btn btn-cta-solid">
-              Download Visitor Guide
-            </a>
+            <Link to="/visitor-guide" className="btn btn-cta-solid">Open Visitor Guide</Link>
             <Link to="/itinerary" className="btn btn-cta-line">
               See a Sample Itinerary
             </Link>

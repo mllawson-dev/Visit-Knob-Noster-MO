@@ -42,8 +42,19 @@ export default function Itinerary() {
                 key={it.id}
                 className="tab-btn"
                 role="tab"
+                id={`tab-${it.id}`}
+                aria-controls="itinerary-panel"
                 aria-selected={activeId === it.id}
+                tabIndex={activeId === it.id ? 0 : -1}
                 onClick={() => setActiveId(it.id)}
+                onKeyDown={(event) => {
+                  const current = ITINERARIES.findIndex((item) => item.id === activeId);
+                  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+                  event.preventDefault();
+                  const next = event.key === "Home" ? 0 : event.key === "End" ? ITINERARIES.length - 1 : (current + (event.key === "ArrowRight" ? 1 : -1) + ITINERARIES.length) % ITINERARIES.length;
+                  setActiveId(ITINERARIES[next].id);
+                  requestAnimationFrame(() => document.getElementById(`tab-${ITINERARIES[next].id}`)?.focus());
+                }}
               >
                 <span className="tb-dur">{it.duration}</span>
                 <span className="tb-name">{it.name}</span>
@@ -52,7 +63,7 @@ export default function Itinerary() {
             ))}
           </div>
 
-          <div className="itin-panel">
+          <div className="itin-panel" id="itinerary-panel" role="tabpanel" aria-labelledby={`tab-${active.id}`} tabIndex="0">
             <div className="itin-head">
               <h3>{active.name}</h3>
               <div className="itin-tags">
@@ -71,11 +82,9 @@ export default function Itinerary() {
       <section className="cta cta--rust">
         <div className="wrap">
           <h2>Ready to Set Your Route?</h2>
-          <p>Download the visitor guide for a printable map and event dates, then pick the itinerary that fits your trip.</p>
+          <p>Open the printable guide for official maps and current links, then pick the itinerary that fits your trip.</p>
           <div className="cta-actions">
-            <a href="#" className="btn btn-cta-solid">
-              Download Visitor Guide
-            </a>
+            <Link to="/visitor-guide" className="btn btn-cta-solid">Open Visitor Guide</Link>
             <Link to="/plan-your-visit" className="btn btn-cta-line">
               Plan the Logistics
             </Link>

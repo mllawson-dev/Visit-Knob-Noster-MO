@@ -1,8 +1,8 @@
 export const DRIVE_TIMES = [
-  { name: "Kansas City, MO", via: "via US-50 E", distance: "68 mi · ~1h 9m" },
-  { name: "Columbia, MO", via: "via I-70 & US-40", distance: "85 mi · ~1h 40m" },
-  { name: "Warrensburg, MO", via: "via US-50 W", distance: "9 mi · ~13m" },
-  { name: "Sedalia, MO", via: "via US-50 E", distance: "11 mi · ~16m" },
+  { name: "Kansas City, MO", via: "via US-50 E", distance: "About 68 mi" },
+  { name: "Columbia, MO", via: "via I-70 W & MO-23 S", distance: "About 85 mi" },
+  { name: "Warrensburg, MO", via: "via US-50 E", distance: "About 9 mi" },
+  { name: "Sedalia, MO", via: "via US-50 W", distance: "About 11 mi" },
 ];
 
 export const STAY_OPTIONS = [
@@ -10,7 +10,7 @@ export const STAY_OPTIONS = [
     tag: "In the Park",
     title: "State Park Campground",
     description:
-      "Basic and electric sites, plus backpack camps along the McAdoo Trail. Seasonal — closed in winter — and full most fall weekends, so reserve ahead.",
+      "Basic, electric, sewer/electric/water, and backpack options are available. Sites 1–25 remain reservable year-round; other campground services are seasonal.",
   },
   {
     tag: "9 mi west",
@@ -31,7 +31,7 @@ export const KNOW_BEFORE_YOU_GO = [
     num: "01",
     title: "Flight ops aren't guaranteed",
     description:
-      "Whiteman AFB doesn't publish a public flight schedule — ask around town or check local spotting groups for the best chance at a B-2 sighting.",
+      "Whiteman AFB does not publish a visitor flight schedule. Enjoy aircraft only from lawful public areas and follow every posted safety and security restriction.",
   },
   {
     num: "02",
@@ -58,13 +58,13 @@ export const FAQS = [
     q: "Q—01",
     title: "Can I tour Whiteman Air Force Base?",
     description:
-      "The base itself is active-duty and not open for casual visits, but it hosts occasional public Community Flyover Days — check the events calendar for dates.",
+      "Not casually. Whiteman offers organized group tours from March through October, subject to advance paperwork, group-size requirements, security review, and mission-related cancellation.",
   },
   {
     q: "Q—02",
     title: "Is Knob Noster a good day trip from Kansas City?",
     description:
-      "Yes — it's about 68 miles and just over an hour via US-50, an easy out-and-back for a hike, a taproom stop, and some plane spotting.",
+      "Yes. It is roughly 68 miles from central Kansas City via US-50. Check live traffic and opening hours before leaving.",
   },
   {
     q: "Q—03",
@@ -74,6 +74,6 @@ export const FAQS = [
   {
     q: "Q—04",
     title: "Is the state park open year-round?",
-    description: "Trails, fishing, and picnic areas stay open all year. The campground itself is seasonal and closes over the winter months.",
+    description: "The park is a year-round destination. Campsites 1–25 are open and reservable year-round; additional sites and some services are seasonal.",
   },
 ];

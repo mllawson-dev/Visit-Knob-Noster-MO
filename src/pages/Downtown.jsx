@@ -4,20 +4,19 @@ import PageHero from "../components/PageHero";
 import TicketStrip from "../components/TicketStrip";
 import SectionHead from "../components/SectionHead";
 import { DOWNTOWN_CATEGORIES, DOWNTOWN_BUSINESSES } from "../data/downtown";
-import { PHOTOS } from "../data/photos";
 import "./Downtown.css";
 
 const STATS = [
-  { label: "Storefronts", value: "6+ Businesses" },
-  { label: "District", value: "Historic Main St" },
-  { label: "Best Time", value: "Weekday Afternoons" },
-  { label: "Parking", value: "Free & Easy" },
+  { label: "Featured", value: "6 Local Stops" },
+  { label: "Directory", value: "Chamber Verified" },
+  { label: "Best Practice", value: "Check Hours" },
+  { label: "Core", value: "State Street" },
 ];
 
 const CATEGORY_CLASS = {
   "food-drink": "cat-food-drink",
   shopping: "cat-shopping",
-  services: "cat-services",
+  experiences: "cat-services",
 };
 
 export default function Downtown() {
@@ -31,8 +30,6 @@ export default function Downtown() {
         crumb="Downtown"
         title={<>Downtown<br />Knob Noster</>}
         stampLines={["Est.", "1856", "•"]}
-        photo={PHOTOS.downtownStorefronts.url}
-        photoAlt={PHOTOS.downtownStorefronts.alt}
         scene={
           <div className="storefront-scene" aria-hidden="true">
             <svg viewBox="0 0 1200 170" preserveAspectRatio="none">
@@ -49,8 +46,8 @@ export default function Downtown() {
           </div>
         }
       >
-        Storefronts with real history, a taproom in a converted bank building, and shops that have been part of
-        Johnson County longer than most visitors have been alive.
+        A compact State Street cluster of locally owned shops, food, drink, and indoor fun—all verified against the
+        current Chamber directory.
       </PageHero>
 
       <TicketStrip items={STATS} />
@@ -112,13 +109,12 @@ export default function Downtown() {
         <div className="wrap">
           <div>
             <p className="kicker">A working Main Street</p>
-            <h2 className="section-title" style={{ fontSize: "clamp(26px,3.4vw,36px)" }}>
-              Old buildings, still in use
+              <h2 className="section-title" style={{ fontSize: "clamp(26px,3.4vw,36px)" }}>
+              Small businesses, close together
             </h2>
             <p>
-              Downtown Knob Noster hasn't been museum-ified — the bank became a taproom, the hardware store is still
-              a hardware store, and the storefronts along Main and Washington are still doing what they were built
-              to do. That's part of the appeal: nothing here is staged for visitors.
+              Downtown is best approached as a local business district, not a theme park. Choose a few stops, confirm
+              opening hours, and leave time for the conversations that make a small-town visit memorable.
             </p>
           </div>
           <div>
@@ -127,8 +123,8 @@ export default function Downtown() {
               Park once, walk the rest
             </h2>
             <p>
-              Free street parking runs along Main and Washington, and the whole downtown stretch is walkable in
-              under fifteen minutes end to end — leave the car and wander.
+              The featured stops cluster around State Street. Follow posted parking signs, use marked crossings, and
+              check accessibility details with each business before your visit.
             </p>
           </div>
         </div>
@@ -139,9 +135,7 @@ export default function Downtown() {
           <h2>Hungry or Just Browsing?</h2>
           <p>Start at Lost Art Taproom or Meyer's Market, then let downtown's few blocks do the rest.</p>
           <div className="cta-actions">
-            <a href="#" className="btn btn-cta-solid">
-              Download Visitor Guide
-            </a>
+            <Link to="/visitor-guide" className="btn btn-cta-solid">Open Visitor Guide</Link>
             <Link to="/itinerary" className="btn btn-cta-line">
               See a Sample Itinerary
             </Link>

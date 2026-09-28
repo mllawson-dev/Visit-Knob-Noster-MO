@@ -33,7 +33,7 @@
   text-transform: uppercase;
   color: var(--rust);
 }
-.day-row h5 {
+.day-row h3 {
   margin: 0 0 6px;
   font-size: 16px;
   font-weight: 700;
