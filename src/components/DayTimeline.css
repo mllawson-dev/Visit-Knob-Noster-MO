@@ -10,7 +10,7 @@
   font-size: 12px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--rust-ink);
   margin-bottom: 4px;
 }
 .day-row {
@@ -31,7 +31,7 @@
   font-weight: 800;
   font-size: 19px;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--rust-ink);
 }
 .day-row h3 {
   margin: 0 0 6px;

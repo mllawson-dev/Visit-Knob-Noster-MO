@@ -4,6 +4,7 @@ import PageHero from "../components/PageHero";
 import TicketStrip from "../components/TicketStrip";
 import SectionHead from "../components/SectionHead";
 import { DOWNTOWN_CATEGORIES, DOWNTOWN_BUSINESSES } from "../data/downtown";
+import { SOURCES } from "../data/sources";
 import "./Downtown.css";
 
 const STATS = [
@@ -95,10 +96,10 @@ export default function Downtown() {
             This is a starter list — see the Chamber's full member directory for everything downtown.
           </span>
           <a
-            href="https://www.knchamber.org/members"
+            href={SOURCES.chamberMembers}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ fontSize: "12.5px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.04em", color: "var(--rust)", textDecoration: "none", borderBottom: "2px solid var(--rust)", paddingBottom: "3px" }}
+            style={{ fontSize: "12.5px", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.04em", color: "var(--rust-ink)", textDecoration: "none", borderBottom: "2px solid var(--rust-ink)", paddingBottom: "3px" }}
           >
             Full Business Directory &rarr;
           </a>

@@ -9,7 +9,7 @@
 .resource-card { background: #fffaf0; border: 2px solid var(--ink); padding: 24px; box-shadow: 8px 8px 0 var(--gold); }
 .resource-card h2 { font: 800 26px/1 var(--font-poster); text-transform: uppercase; margin-top: 0; }
 .resource-links { display: grid; gap: 12px; }
-.resource-links a { color: var(--rust); font-weight: 700; line-height: 1.4; }
+.resource-links a { color: var(--rust-ink); font-weight: 700; line-height: 1.4; }
 .source-note { margin-top: 32px; padding-top: 20px; border-top: 1px solid rgba(36,28,28,.24); font-size: 13px; }
 .print-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
 @media (max-width: 760px) { .utility-grid { grid-template-columns: 1fr; } }
