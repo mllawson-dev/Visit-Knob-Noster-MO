@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { SOURCES } from "../data/sources";
 import "./Footer.css";
 
 export default function Footer() {
@@ -27,7 +28,7 @@ export default function Footer() {
                 <Link to="/state-park">Knob Noster State Park</Link>
               </li>
               <li>
-                <a href="https://www.whiteman.af.mil/Community/Base-Tours/Base-Tours/" target="_blank" rel="noreferrer">Official Base Tours</a>
+                <a href={SOURCES.whitemanTours} target="_blank" rel="noreferrer">Official Base Tours</a>
               </li>
               <li>
                 <Link to="/downtown">Downtown Shops</Link>
@@ -55,13 +56,13 @@ export default function Footer() {
             <div className="footer-heading">Official Resources</div>
             <ul>
               <li>
-                <a href="https://www.knchamber.org/member-directory" target="_blank" rel="noreferrer">Chamber Directory</a>
+                <a href={SOURCES.chamberDirectory} target="_blank" rel="noreferrer">Chamber Directory</a>
               </li>
               <li>
-                <a href="https://mostateparks.com/park/knob-noster-state-park" target="_blank" rel="noreferrer">Missouri State Parks</a>
+                <a href={SOURCES.statePark} target="_blank" rel="noreferrer">Missouri State Parks</a>
               </li>
               <li>
-                <a href="https://www.whiteman.af.mil/News/" target="_blank" rel="noreferrer">Whiteman News</a>
+                <a href={SOURCES.whitemanNews} target="_blank" rel="noreferrer">Whiteman News</a>
               </li>
             </ul>
           </div>

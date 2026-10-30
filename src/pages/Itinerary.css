@@ -29,7 +29,7 @@
   background: #e4d9b5;
 }
 .tab-btn[aria-selected="true"] {
-  background: var(--rust);
+  background: var(--rust-ink);
   color: var(--cream);
 }
 .tab-btn .tb-dur {
@@ -50,6 +50,10 @@
   font-size: 13px;
   line-height: 1.5;
   opacity: 0.85;
+}
+.tab-btn[aria-selected="true"] .tb-dur,
+.tab-btn[aria-selected="true"] .tb-sub {
+  opacity: 1;
 }
 
 .itin-panel {
@@ -83,5 +87,5 @@
   padding: 6px 12px;
   border-radius: 2px;
   background: rgba(198, 87, 46, 0.12);
-  color: var(--rust);
+  color: var(--rust-ink);
 }

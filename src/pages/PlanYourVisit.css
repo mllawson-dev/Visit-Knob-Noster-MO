@@ -37,7 +37,7 @@
   font-family: var(--font-poster);
   font-weight: 700;
   font-size: 17px;
-  color: var(--rust);
+  color: var(--rust-ink);
   white-space: nowrap;
 }
 .route-row .rt {
@@ -71,7 +71,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--rust-ink);
 }
 .stay-card h3 {
   font-family: var(--font-poster);
@@ -151,7 +151,7 @@
   font-size: 11.5px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--rust);
+  color: var(--rust-ink);
   margin-bottom: 8px;
 }
 .faq-card h3 {

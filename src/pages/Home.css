@@ -8,7 +8,7 @@
 .hero-inner {
   position: relative;
   z-index: 3;
-  padding: 76px 0 0;
+  padding-top: 76px;
 }
 .hero-kicker {
   font-family: var(--font-stamp);
@@ -176,7 +176,7 @@
 .do-card .do-num {
   font-family: var(--font-stamp);
   font-size: 12px;
-  color: var(--rust);
+  color: var(--rust-ink);
 }
 .do-card h3 {
   font-family: var(--font-poster);
@@ -237,7 +237,7 @@
 .source-card { border: 2px solid var(--ink); background: #fffaf0; padding: 28px; box-shadow: 7px 7px 0 var(--gold); }
 .source-card h3 { font: 800 30px/1 var(--font-poster); text-transform: uppercase; margin: 0 0 12px; }
 .source-card p:not(.kicker) { color: #4c4038; line-height: 1.65; }
-.source-card a { color: var(--rust); font-weight: 800; text-transform: uppercase; font-size: 13px; }
+.source-card a { color: var(--rust-ink); font-weight: 800; text-transform: uppercase; font-size: 13px; }
 @media (max-width: 720px) { .source-grid { grid-template-columns: 1fr; } }
 .plan-teaser-item p {
   font-size: 14.5px;

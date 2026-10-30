@@ -17,12 +17,21 @@ This is an independent portfolio concept, not an official tourism site. Visitor 
 
 Photography: Knob Noster State Park images from Missouri State Parks (public domain, via Wikimedia Commons). B-2 Spirit image: U.S. Air Force photo by Airman 1st Class Hailey Farrell (public domain, via DVIDS).
 
+## Testing
+
+- **Unit and data tests** (Vitest): every official link is https and points to an official host, pages link out only through `src/data/sources.js`, every photo ships with its file, alt text and a public-domain credit, itineraries and listings are complete, every Open-Meteo weather code has a label, and the weather widget's request, loading, success and five failure cases.
+- **Browser tests** (Playwright, desktop and phone): every page's title, heading, focus and layout (no sideways scroll, no text against the screen edge), the mobile menu, the itinerary tabs keyboard pattern, the filters, weather with a mocked Open-Meteo response and outage, the Google Maps directions link, and an axe-core accessibility scan of every page (WCAG 2.2 AA).
+- GitHub Actions runs lint and both suites on every push and pull request.
+
 ## Run locally
 
 ```sh
 npm install
 npm run dev
 npm run lint
+npm test                              # unit and data tests
+npx playwright install chromium       # once
+npm run test:e2e                      # browser and accessibility tests
 npm run build
 ```
 

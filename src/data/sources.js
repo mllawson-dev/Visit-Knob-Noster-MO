@@ -1,6 +1,7 @@
 export const SOURCES = {
   chamber: "https://www.knchamber.org/",
   chamberDirectory: "https://www.knchamber.org/member-directory",
+  chamberMembers: "https://www.knchamber.org/members",
   chamberContact: "https://www.knchamber.org/contact",
   statePark: "https://mostateparks.com/park/knob-noster-state-park",
   stateParkTrails: "https://mostateparks.com/park/knob-noster/trails",
@@ -9,5 +10,6 @@ export const SOURCES = {
   stateParkEvents: "https://mostateparks.com/park/knob-noster-state-park",
   whitemanTours: "https://www.whiteman.af.mil/Community/Base-Tours/Base-Tours/",
   whitemanAccess: "https://www.whiteman.af.mil/baseaccess/",
+  whitemanNews: "https://www.whiteman.af.mil/News/",
   directions: "https://www.google.com/maps/dir/?api=1&destination=Knob+Noster%2C+MO",
 };
